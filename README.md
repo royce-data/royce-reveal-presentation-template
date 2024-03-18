@@ -12,6 +12,7 @@ By using this template you can host and publish a presentation with the Royce br
 2. Click on *Use this template*
 3. Select *Create a new repository*
    - When creating the repository make sure to de-selecte 'Include all branches', only copy the `main` branch
+   - You can review the repository naming tips in the section
 4. Edit [index.html](./presentation/index.html) in the [presentation](./presentation/) directory
    - You can also replace [index.html](./presentation/index.html) with [markdown_example.html](./example_resources/markdown_example.html) by placing it in the [presentation](./presentation/) directory and renaming it
 5. Push your updates
@@ -27,6 +28,7 @@ By using this template you can host and publish a presentation with the Royce br
 5. Click *Save*
 6. Your website should take a few minutes to generate and will be live under \<USERNAME\>.github.io/\<REPOSITORY_NAME\>
 
+![](./repo_images/github_sidemenu_pages.png)
 
 ### What is contained within the template
 
@@ -72,10 +74,16 @@ For the reveal.js Markdown guide, please review the official documentation for u
 
 ## Useful information
 
+### How `gh-pages` is generated
+
 When you push to the branch `main`, it will trigger an automatic process that copies the [presentation](./presentation/) directory to the branch `gh-pages`. You do not need to modify `gh-pages` as it is modified automatically and will host only what files are included in the [presentation](./presentation/) directory.  
 Additionally, this automatic process will enable you to publish the presentation from the `gh-pages` branch.
 
 If you want a homogenous theme without a title slide banner, you can remove the section id names shown in the above images
+
+<details>
+
+<summary>HTML</summary>
 
 ###### HTML
 ```
@@ -90,6 +98,11 @@ If you want a homogenous theme without a title slide banner, you can remove the 
 ...
 </section>
 ```
+</details>
+
+<details>
+
+<summary>Markdown</summary>
 
 ###### Markdown
 
@@ -105,3 +118,10 @@ If you want a homogenous theme without a title slide banner, you can remove the 
 ...
 ---
 ```
+</details>
+
+### Tips for naming your repository
+
+1. Keep it short-ish
+2. Be descriptive enough
+3. ISO date format + conference is a good combination, e.g. '2024-02-28_nameofconference'
