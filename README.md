@@ -12,7 +12,7 @@ By using this template you can host and publish a presentation with the Royce br
 2. Click on *Use this template*
 3. Select *Create a new repository*
    - When creating the repository make sure to de-selecte 'Include all branches', only copy the `main` branch
-   - You can review the repository naming tips in the section
+   - You can review the repository naming tips in the section [Tips for naming your repository](https://github.com/royce-data/royce-reveal-presentation-template?tab=readme-ov-file#tips-for-naming-your-repository)
 4. Edit [index.html](./presentation/index.html) in the [presentation](./presentation/) directory
    - You can also replace [index.html](./presentation/index.html) with [markdown_example.html](./example_resources/markdown_example.html) by placing it in the [presentation](./presentation/) directory and renaming it
 5. Push your updates
