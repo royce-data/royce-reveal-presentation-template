@@ -1,0 +1,74 @@
+/**
+ * The Henry Royce Institute theme for reveal.js presentations,
+ * based on the white theme for reveal.js by Hakim El Hattab.
+ *
+ * This theme is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2023 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../reveal.js/css/theme/template/mixins";
+@import "../reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+/*-- scss:defaults --*/
+$royce-grey:#555555;
+$royce-yellow: #ffd100;
+$royce-turquoise: #00a19a;
+
+
+/*-- scss:rules --*/
+.reveal h5, 
+.reveal h6 {
+    color: lighten($royce-grey, 10%) !important; 
+    font-family: Helvetica, Arial, sans-serif !important;
+}
+
+.reveal h4 {
+    font-family: Helvetica, Arial, sans-serif !important;
+}
+
+.small-text {
+    color: lighten($royce-grey, 15%) !important;
+    font-size: smaller;
+}
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: $royce-grey;
+$headingColor: $royce-turquoise;
+
+$mainFontSize: 42px;
+$mainFont: Helvetica, Arial, sans-serif;
+$headingFont: Helvetica, Arial, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: $royce-yellow;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+@mixin bodyBackground() {
+    background-image: url('../royce_assets/theme_assets/royce_banner.svg'), url('../royce_assets/theme_assets/HenryRoyceInstitute_MasterLogo_RGB_Grey.png');
+    background-repeat: no-repeat, no-repeat;
+    vertical-align: bottom, top;
+    height: 100%, 20%;
+    width: 100%, 20%;
+    background-position: 0% 100%, right top;
+    background-size: contain, 12%;
+    }
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+
+// Theme template ------------------------------
+@import "../reveal.js/css/theme/template/theme";
+// ---------------------------------------------
