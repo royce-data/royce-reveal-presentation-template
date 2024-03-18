@@ -6,6 +6,28 @@ By using this template you can host and publish a presentation with the Royce br
 
 ## How to use this template
 
+### Create your repository
+
+1. Navigate to the template icon within this page
+2. Click on *Use this template*
+3. Select *Create a new repository*
+   - When creating the repository make sure to de-selecte 'Include all branches', only copy the `main` branch
+4. Edit [index.html](./presentation/index.html) in the [presentation](./presentation/) directory
+   - You can also replace [index.html](./presentation/index.html) with [markdown_example.html](./example_resources/markdown_example.html) by placing it in the [presentation](./presentation/) directory and renaming it
+5. Push your updates
+
+![](./repo_images/use_template_create_repo_github.png)
+
+### Publish your presentation
+
+1. Navigate to *Settings* in your repository
+2. Navigate to *Pages* in the left-hand side toolbar menu
+3. Make sure that *Deploy from branch* is selected under *Source*
+4. Select `gh-pages` under *Branch*
+5. Click *Save*
+6. Your website should take a few minutes to generate and will be live under \<USERNAME\>.github.io/\<REPOSITORY_NAME\>
+
+
 ### What is contained within the template
 
 The files that will be published are within the [presentation](./presentation/) directory.
@@ -17,11 +39,6 @@ Within the directory you can find:
 3. [royce_assets/](./presentation/royce_assets/) directory, where we house some images that make up the template
 4. [styles/](./presentation/styles/) directory, where the `.scss` file, the `.css.map` auxiliary, and the compiled `.css` file are contained, the `.css` file is where the main theme is hosted
 5. [modifiers/](/presentation/modifiers/) directory, which contains a JavaScript file for controlling the appearance of the title page of the presentation and the appearance according the location on the page
-
-
-
-### How to publish your presentation
-
 
 # UNDER CONSTRUCTION
 ## How to modify this template
